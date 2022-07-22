@@ -1,44 +1,46 @@
 import React from 'react'
-import  './header.css'
+import styled from 'styled-components';
 
+export const Header = styled.header `
+  background-color: aliceblue;
+`
 
 const header = () => {
   return (
-    <>
-        <header>
-  <div className="logo">
-    <img src="img/devjane.png" alt="" />
-  </div>
-  <button className="nav-toggle" aria-label="toggle navigation">
-    <span className="hamburger" />
-  </button>
-  <nav className="nav">
-    <ul className="nav__list">
-      <li className="nav__item">
-        <a href="#" className="nav__link">
-          Home
-        </a>
-      </li>
-      <li className="nav__item">
-        <a href="#" className="nav__link">
-          About me
-        </a>
-      </li>
-      <li className="nav__item">
-        <a href="#" className="nav__link">
-          Projects
-        </a>
-      </li>
-      <li className="nav__item">
-        <a href="#" className="nav__link">
-          Contact Me
+    
+  <Header>
+          <div className="logo">
+            <img src='https://i.imgur.com/epDCNXb.png' alt='logo'/>
+          </div>
+          <button className="nav-toggle" aria-label="toggle navigation">
+            <span className="hamburger" />
+          </button>
+          <nav className="nav">
+            <ul className="nav__list">
+              <li className="nav__item">
+                <a href="#" className="navlink">
+
+            </a>
+          </li>
+          <li className="nav__item">
+            <a href="#" className="navlink">
+              About me fgf
+            </a>
+          </li>
+          <li className="nav__item">
+            <a href="#" className="navlink">
+              Projects
+            </a>
+          </li>
+          <li className="nav__item">
+            <a href="#" className="navlink">
+              Contact Me
         </a>
       </li>
     </ul>
   </nav>
-</header>
-    </>
+</Header>
   )
 }
 
-export default header
+export default Header

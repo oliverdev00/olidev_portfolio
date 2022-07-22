@@ -11,7 +11,7 @@ const hero = () => {
             <p>My interests are in Front End development, and I like to create cool, useful and performant products with delightful user experiences.</p>
             <button className='button'>Hire me</button>
             </section>
-    </div>
+    </div>  
   )
 }
 
